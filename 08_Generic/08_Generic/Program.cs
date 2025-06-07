@@ -31,6 +31,31 @@ namespace _08_Generic
         }
     }
 
+    public class VectorEnumerator<T> : IEnumerator
+    {
+        private T[] data;
+        private int index;
+
+        public VectorEnumerator(T[] data)
+        {
+            this.data = data;
+            index = -1;
+        }
+
+        public object? Current => data[index];
+
+        public bool MoveNext()
+        {
+            index++;
+            return index >= data.Length ? false : true;
+        }
+
+        public void Reset()
+        {
+            index = -1;
+        }
+    }
+
     public class Vector<T> : IEnumerable
     {
         private T[] data;
@@ -77,6 +102,11 @@ namespace _08_Generic
             data = tmp;
         }
 
+        public IEnumerator GetEnumerator()
+        {
+            return new VectorEnumerator<T>(data);
+        }
+
         public void Remove(int index)
         {
             if(data.Length == 0)
@@ -92,11 +122,6 @@ namespace _08_Generic
             }
 
             data = tmp;
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return data.GetEnumerator();
         }
     }
 
@@ -118,6 +143,18 @@ namespace _08_Generic
         {
             T value = new();
             return value;
+        }
+
+        static void MyForEach(IEnumerable collection)
+        {
+            var enumerator = collection.GetEnumerator();
+
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+
+            enumerator.Reset();
         }
 
         static void Main(string[] args)
@@ -164,6 +201,15 @@ namespace _08_Generic
             {
                 Console.WriteLine(color);
             }
+
+
+            Console.WriteLine("====== MY FOREACH ========");
+
+            int[] arr = [1, 2, 3, 4, 5, 6];
+
+            MyForEach(arr);
+
+            Int32
         }
     }
 }
