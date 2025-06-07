@@ -208,8 +208,6 @@ namespace _08_Generic
             int[] arr = [1, 2, 3, 4, 5, 6];
 
             MyForEach(arr);
-
-            Int32
         }
     }
 }
