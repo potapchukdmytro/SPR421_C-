@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "async_await", "async_await\async_await.csproj", "{E0C07DF8-33CE-4A5B-B087-4B8794DFED0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asyncUI", "asyncUI\asyncUI.csproj", "{2F69143E-3CC6-4212-A096-0A0277EDFDBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0C07DF8-33CE-4A5B-B087-4B8794DFED0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C07DF8-33CE-4A5B-B087-4B8794DFED0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C07DF8-33CE-4A5B-B087-4B8794DFED0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C07DF8-33CE-4A5B-B087-4B8794DFED0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F69143E-3CC6-4212-A096-0A0277EDFDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F69143E-3CC6-4212-A096-0A0277EDFDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F69143E-3CC6-4212-A096-0A0277EDFDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F69143E-3CC6-4212-A096-0A0277EDFDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E713463-19CC-42F1-9F94-13D5E77F85BE}
+	EndGlobalSection
+EndGlobal
